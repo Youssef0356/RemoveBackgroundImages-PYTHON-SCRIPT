@@ -6,7 +6,7 @@ import os
 # os.environ['U2NET_HOME'] = r"C:\\Users\\<Your_Username>\\Downloads"
 # Example for macOS/Linux:
 # os.environ['U2NET_HOME'] = '/Users/<Your_Username>/Downloads'
-os.environ['U2NET_HOME'] = r"C:\\Users\\guerr\\Downloads"
+os.environ['U2NET_HOME'] = r"C:\\Users\\PCNAME\\Downloads"
 
 from rembg import remove, new_session
 
@@ -49,7 +49,7 @@ if __name__ == "__main__":
     # --- Configuration Section ---
     # Set the name of the folder containing your input images.
     # Make sure this folder is in the same directory as your Python script.
-    input_folder_name = "T001-Asservissement"
+    input_folder_name = "inputfoldername"
     # Suffix to append to the derived output folder name
     output_suffix = "BGREMOVED"  # e.g. becomes "<INPUT_NAME>BGREMOVED"
     # Whether to uppercase the derived output folder name (to match your first example)
@@ -84,3 +84,4 @@ if __name__ == "__main__":
                 
                 # Call the function to remove the background
                 remove_background(input_file_path, output_file_path)
+
