@@ -4,8 +4,7 @@ import os
 # (e.g. u2net.onnx). This must be set BEFORE importing rembg.
 # Example for Windows:
 # os.environ['U2NET_HOME'] = r"C:\\Users\\<Your_Username>\\Downloads"
-# Example for macOS/Linux:
-# os.environ['U2NET_HOME'] = '/Users/<Your_Username>/Downloads'
+
 os.environ['U2NET_HOME'] = r"C:\\Users\\PCNAME\\Downloads"
 
 from rembg import remove, new_session
@@ -84,4 +83,5 @@ if __name__ == "__main__":
                 
                 # Call the function to remove the background
                 remove_background(input_file_path, output_file_path)
+
 
